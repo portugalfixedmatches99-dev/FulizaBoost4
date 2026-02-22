@@ -3,9 +3,9 @@ import "../styles/Admi.css";
 
 // Sample API calls (replace with your backend endpoints)
 const fetchPaidBoosts = async (startDate?: string, endDate?: string) => {
-  let url = "https://fulizaboost-f4ry.onrender.com/api/boosts/paid";
+  let url = "https://fulizaboost6.onrender.com/api/boosts/paid";
   if (startDate && endDate) {
-    url = `https://fulizaboost-f4ry.onrender.com/api/boosts/paid/filter?startDate=${startDate}&endDate=${endDate}`;
+    url = `https://fulizaboost6.onrender.com/api/boosts/paid/filter?startDate=${startDate}&endDate=${endDate}`;
   }
   const res = await fetch(url);
   return res.json();
